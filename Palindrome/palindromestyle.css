@@ -1,0 +1,180 @@
+body {
+    font-family: Verdana, sans-serif;
+    text-align: center;
+    margin-top: 50px;
+    font-size: 20px;
+    letter-spacing: .5px;
+    background-color: #ece1e6ff;
+    border-radius: 10px;
+    padding: 5px;
+    justify-content: center;
+    margin-right: 80px;
+    margin-left: 80;
+    
+}
+
+.container {
+    background-color: #EDC9FF;
+    border-radius: 10px;
+    padding: 5px;
+    display: inline-block;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, .75), 0 6px 6px rgba(0, 0, 0, 0.50);
+    shadow-color: #000000;
+    shadow-offset: 5px 4px;
+    shadow-opacity: 1.0;
+    shadow-radius: 8px;
+    corner-radius: 20px;
+    
+}
+
+#generateButton {
+    font-family: Verdana, sans-serif;
+    background-color: #FED4E7;
+    color: rgba(0, 0, 0, 1);
+    padding: 10px 16px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 8px;
+    border-width: 1px;
+    border-color: #FED4E7;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, .75), 0 2px 1px rgba(0, 0, 0, 0.50);
+    transition: all 0.3s ease;
+}
+
+#generateButton:hover {
+    background-color: #bb849dff;
+    box-shadow: 0 6px 14px rgba(0, 0, 0, .85), 0 3px 2px rgba(0, 0, 0, 0.60);
+    transform: scale(1.05);
+}
+
+@keyframes lights {
+  0% {
+    color: hsla(231, 34%, 85%, 1.00);
+    text-shadow:
+      0 0 1em hsla(320, 100%, 50%, 0.2),
+      0 0 0.125em hsla(320, 100%, 60%, 0.3),
+      -1em -0.125em 0.5em hsla(40, 100%, 60%, 0),
+      1em 0.125em 0.5em hsla(200, 100%, 60%, 0);
+  }
+  
+  30% { 
+    color: hsl(230, 80%, 90%);
+    text-shadow:
+      0 0 1em hsla(320, 100%, 50%, 0.5),
+      0 0 0.125em hsla(320, 100%, 60%, 0.5),
+      -0.5em -0.125em 0.25em hsla(40, 100%, 60%, 0.2),
+      0.5em 0.125em 0.25em hsla(200, 100%, 60%, 0.4);
+  }
+  
+  40% { 
+    color: hsl(230, 100%, 95%);
+    text-shadow:
+      0 0 1em hsla(320, 100%, 50%, 0.5),
+      0 0 0.125em hsla(320, 100%, 90%, 0.5),
+      -0.25em -0.125em 0.125em hsla(40, 100%, 60%, 0.2),
+      0.25em 0.125em 0.125em hsla(200, 100%, 60%, 0.4);
+  }
+  
+  70% {
+    color: hsl(230, 80%, 90%);
+    text-shadow:
+      0 0 1em hsla(320, 100%, 50%, 0.5),
+      0 0 0.125em hsla(320, 100%, 60%, 0.5),
+      0.5em -0.125em 0.25em hsla(40, 100%, 60%, 0.2),
+      -0.5em 0.125em 0.25em hsla(200, 100%, 60%, 0.4);
+  }
+  
+  100% {
+    color: hsl(230, 40%, 80%);
+    text-shadow:
+      0 0 1em hsla(320, 100%, 50%, 0.2),
+      0 0 0.125em hsla(320, 100%, 60%, 0.3),
+      1em -0.125em 0.5em hsla(40, 100%, 60%, 0),
+      -1em 0.125em 0.5em hsla(200, 100%, 60%, 0);
+  }
+  
+}
+
+@keyframes type {
+  from {
+    width: 0;
+  }
+
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes cursor {
+  50% {
+    border-color: transparent;
+  }
+}
+
+h1 {
+  font-family: 'Brush Script MT', script;
+  background: -webkit-linear-gradient(25deg, #a75d3fff, #a75d3fff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: #ffffffff;
+  margin-bottom: 20px;
+  overflow: hidden;
+  white-space: nowrap;
+  font-size: auto;
+  font-weight: bold;
+  justify-content: center;
+  display: inline-block;
+  align-items: center;
+  text-align: center;
+  animation: type .5s steps(90) .5s 1 normal both, cursor 1s step-end infinite;
+}
+
+#word-display { /*a lot of this does not really change much from defaults but whatever*/
+    color: #6C290F;
+    background-color: transparent;
+    background-size: 300px;
+    background-left: center;
+    background-top: center;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    margin-top: 0px;
+    margin-left: 75px;
+    margin-right: 75px;
+    padding: 1px;
+    border-radius: 8px;
+    border-width: 1px;
+    border-color: transparent   ;
+    border-style: solid;
+    border-top-width: 1px;
+    border-bottom-width: 1px;
+    border-left-width: 1px;
+    border-right-width: 1px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    white-space: auto;
+}
+
+a {
+    background-color: transparent;
+    color: #8791b9;
+    text-decoration: underline dotted;
+    text-transform: uppercase;
+    padding: 4px;
+    margin-bottom: 1000px;
+    margin-right: 1400px;
+    font-size: 20px;
+
+}
+
+a:hover {
+    background-color: #c4bce2ff;
+    text-decoration: underline;
+}
