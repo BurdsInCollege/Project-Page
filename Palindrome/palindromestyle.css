@@ -160,6 +160,8 @@ h1 {
     align-items: center;
     text-align: center;
     white-space: auto;
+    min-width: 400px;
+    max-width: 60px;
 }
 
 a {
