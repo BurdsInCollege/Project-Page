@@ -1,0 +1,119 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #544758ff;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.container {
+    background: #7B5C84;
+    border-radius: 20px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+    width: 100%;
+    max-width: 500px;
+    padding: 30px;
+}
+
+h1 {
+    color: #f5b7afff;
+    margin-bottom: 10px;
+    font-size: 30px;
+    font-family: 'Audiowide', sans-serif;
+}
+
+.date-display {
+    color: #f5b7afff;
+    font-size: 14px;
+    font-family: 'Audiowide', sans-serif;
+    margin-bottom: 10px;
+}
+
+.countdown {
+    color: #f5b7afff;
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    padding: 10px;
+    gap: 8px;
+    letter-spacing: 2px;
+    background: transparent;
+    border-radius: 8px;
+    text-align: center;
+    font-family: 'Bebas Neue', sans-serif;
+}
+
+.checklist {
+    list-style: none;
+}
+
+.checklist-item {
+    background: #c0a7c9ff;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    transition: all 0.3s;
+    font-family: 'Bebas Neue', sans-serif;
+}
+
+.checklist-item:hover {
+    background: #ecc9f7ff;
+}
+
+.checklist-item.completed {
+    opacity: 0.6;
+}
+
+.checklist-item.completed .item-text {
+    text-decoration: line-through;
+    color: #999;
+}
+
+input[type="checkbox"] {
+    width: 22px;
+    height: 22px;
+    cursor: pointer;
+    accent-color: #667eea;
+}
+
+.item-text {
+    flex: 1;
+    font-size: 16px;
+    color: #333;
+}
+
+.stats {
+    margin-top: 20px;
+    padding: 15px;
+    background: #c0a7c9ff;
+    border-radius: 10px;
+    text-align: center;
+    color: #000000ff;
+    font-size: 14px;
+}
+
+a {
+    background-color: transparent;
+    color: #8791b9;
+    text-decoration: underline dotted;
+    text-transform: uppercase;
+    padding: 4px;
+    margin-bottom: 800px;
+}
+
+a:hover {
+    background-color: #6d6a77ff;
+    text-decoration: underline;
+    border-radius: 4px;
+}
